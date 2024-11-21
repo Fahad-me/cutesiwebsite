@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahad's Cute Website</title>
+    <style>
+        /* Overall Body Styling */
+        body {
+            display: grid;
+            grid-template-rows: 10vh 80vh 10vh;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fbc2eb);
+            color: #333;
+        }
+
+        /* Header */
+        .div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ff6f91;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .div h1 {
+            color: #fff;
+            font-size: 2.5em;
+            margin: 0;
+            animation: bounce 2s infinite;
+        }
+
+        /* Main Section */
+        .second {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #fff5f7;
+            padding: 2em;
+            border-radius: 20px;
+            margin: 0 1em;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .second h2 {
+            color: #ff6f91;
+            font-size: 1.8em;
+            margin-bottom: 1em;
+        }
+
+        /* Search Form */
+        .some {
+            background: #fff;
+            border: 2px solid #ff9a9e;
+            border-radius: 20px;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            margin-bottom: 1em;
+            color: #333;
+            width: 80%;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .some::placeholder {
+            color: #ff9a9db0;
+            font-style: italic;
+        }
+
+        .second button {
+            background: #ff6f91;
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .second button:hover {
+            background: #ff9a9e;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ff6f91;
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: bold;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animations */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <h1>💖Cute Site 💖</h1>
+    </div>
+    <div class="second">
+        <h2>Welcome to My Adorable Website!</h2>
+        <!-- Form for Google Search -->
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <input type="text" name="q" placeholder="Search for something cute..." class="some">
+            <button type="submit">Search ✨</button>
+        </form>
+    </div>
+    <div class="footer">
+        🐾 Made with Love by Fahad 🐾
+    </div>
+</body>
+
+</html>
